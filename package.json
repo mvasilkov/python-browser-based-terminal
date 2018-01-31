@@ -1,0 +1,12 @@
+{
+  "name": "python-browser-based-terminal",
+  "version": "1.0.0",
+  "main": "app.py",
+  "repository": "git@github.com:mvasilkov/python-browser-based-terminal.git",
+  "author": "Mark Vasilkov (https://github.com/mvasilkov)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "xterm": "^3.0.2"
+  }
+}

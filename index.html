@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Terminal</title>
+        <link rel="stylesheet" href="node_modules/xterm/dist/xterm.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="terminal-container"></div>
+        </div>
+        <script src="node_modules/xterm/dist/xterm.js"></script>
+        <script src="node_modules/xterm/dist/addons/terminado/terminado.js"></script>
+        <script>
+            terminado.apply(Terminal)
+
+            const terminal = new Terminal
+            terminal.open(document.getElementById('terminal-container'))
+
+            const url = location.origin.replace(/^http/, 'ws') + '/socket'
+            const sock = new WebSocket(url)
+            sock.addEventListener('open', function () {
+                terminal.terminadoAttach(sock)
+            })
+        </script>
+    </body>
+</html>
