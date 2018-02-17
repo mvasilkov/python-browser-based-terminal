@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
-xterm@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/xterm/-/xterm-3.0.2.tgz#1acc6317367f4290b6be2d4ac1af0d2631fdbb35"
+systematize@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/systematize/-/systematize-2.0.0.tgz#86d0f50b33582791b137d8e5af51dbe7e2327e58"
+
+xterm@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/xterm/-/xterm-3.1.0.tgz#7f7e1c8cf4b80bd881a4e8891213b851423e90c9"

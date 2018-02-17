@@ -1,0 +1,8 @@
+#terminal-container {
+    height: 100vh;
+}
+
+.xterm {
+    float: left;
+    font-family: 'SFMono-Regular', 'Ubuntu Mono', Consolas, 'DejaVu Sans Mono', Menlo, monospace;
+}
